@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2728477799649877265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2728477799649877267}
+  - component: {fileID: 2728477799649877266}
+  m_Layer: 0
+  m_Name: HammerEmpty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2728477799649877267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728477799649877265}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2728477799649877266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2728477799649877265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0425ac418718ced438906c65d2c33756, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hammerVisual: {fileID: 0}
+  anim: {fileID: 0}
+  cameraShake: {fileID: 0}
+  hammerList:
+  - {fileID: 4327303152052597208, guid: e4dd0921c87aa9f47ba54b6135ae9ccf, type: 3}
+  - {fileID: 23271492084907097, guid: 2375c642ddd1747448be6b11f661269b, type: 3}
+  - {fileID: 2294739623155113851, guid: 6a4f01bfa4aaf0d4c9ec319ba4862e1c, type: 3}
+  - {fileID: 4029212291084258305, guid: 5c6f2709bf6736f4399b50cca271734e, type: 3}
+  - {fileID: 9122545979060500490, guid: 7ee4bc7f51c95ad429186bd34af4fd95, type: 3}
+  - {fileID: 8005385262018688723, guid: a309f81d1c067c448b7806c8bbbcec9e, type: 3}
+  - {fileID: 653917689272417972, guid: 1b9b01dc657f64e468eba9c31290a3d6, type: 3}
+  - {fileID: 1099379596605294997, guid: d70a659fdb0bbcc43b5ecb8dab6b0e87, type: 3}
+  audiosName:
+  - Hit01
+  - Hit02
+  - Hit03
+  - Hit04
