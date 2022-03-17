@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class HammerManager : MonoBehaviour
 {
@@ -46,16 +48,28 @@ public class HammerManager : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit, 1000))
                 {
-                    if (hit.transform.tag == "Hole" || hit.transform.tag == "Mole" || hit.transform.tag == "Market" 
-                        || hit.transform.tag == "Settings" || hit.transform.tag == "Chest" || hit.transform.tag == "Exit")
+                    if (!IsPointerOverUIObject())
                     {
-                        transform.position = hit.transform.position;
-                        canHit = false;
-                        StartCoroutine(Hit());
+                        if (hit.transform.tag == "Hole" || hit.transform.tag == "Mole" || hit.transform.tag == "Market"
+                        || hit.transform.tag == "Settings" || hit.transform.tag == "Chest" || hit.transform.tag == "Exit")
+                        {
+                            transform.position = hit.transform.position;
+                            canHit = false;
+                            StartCoroutine(Hit());
+                        }
                     }
                 }
             }
         }
+    }
+
+    private bool IsPointerOverUIObject()
+    {
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
+        eventDataCurrentPosition.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        List<RaycastResult> results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+        return results.Count > 0;
     }
 
     public IEnumerator Hit()

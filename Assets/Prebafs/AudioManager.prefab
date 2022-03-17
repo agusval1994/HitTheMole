@@ -118,7 +118,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: ea5bcd08a1d89f8478f89fa7e77b8fb4, type: 3}
     volume: 0.075
     pitch: 1
-    loop: 0
+    loop: 1
     playOnAwake: 0
     source: {fileID: 0}
   - name: LogoSound

@@ -11,6 +11,7 @@ TagManager:
   - Settings
   - Chest
   - Exit
+  - Pause
   layers:
   - Default
   - TransparentFX

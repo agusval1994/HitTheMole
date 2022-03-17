@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7208691125416492846}
   - component: {fileID: 7208691125416492841}
   - component: {fileID: 4216435063538994335}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: FlashEfect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 7208691125416492847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 7208691126364090785}
   m_Father: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 7208691126364090785}
   - component: {fileID: 7208691126364090787}
   - component: {fileID: 7208691126364090784}
-  m_Layer: 5
+  m_Layer: 2
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
