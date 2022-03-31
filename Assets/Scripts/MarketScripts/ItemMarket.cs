@@ -38,10 +38,6 @@ public class ItemMarket : MonoBehaviour
 
             popUpConfirmItem.SetActive(true);
         }
-        else
-        {
-            print("No hay guita");
-        }
     }
 
     public void BuyMole()
@@ -58,10 +54,6 @@ public class ItemMarket : MonoBehaviour
             market.itemToBuy = 0;
 
             popUpConfirmItem.SetActive(true);
-        }
-        else
-        {
-            print("No hay guita");
         }
     }
 }

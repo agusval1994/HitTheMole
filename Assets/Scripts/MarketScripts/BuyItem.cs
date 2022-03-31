@@ -27,11 +27,18 @@ public class BuyItem : MonoBehaviour
 
         text_actualMoney.text = actualMoney.ToString();
 
-        postPayMoney = actualMoney - market.molePrice;
+        if(market.itemToBuy == 0)
+        {
+            postPayMoney = actualMoney - market.molePrice;
+            text_price.text = "-" + market.molePrice.ToString();
+        }
+        else
+        {
+            postPayMoney = actualMoney - market.hammerPrice;
+            text_price.text = "-" + market.hammerPrice.ToString();
+        }
 
         text_postPayMoney.text = postPayMoney.ToString();
-
-        text_price.text = "-" + market.molePrice.ToString();
     }
 
     public void PurchaseItem()
